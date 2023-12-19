@@ -35,7 +35,7 @@ class ListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "listcell", for: indexPath) as! staticDataList
         let data = arrayOfList[indexPath.row]
-        cell.lblName.text = "Name: \(data.username ?? "")"
+        cell.lblName.text = "Name:- \(data.username ?? "")"
         cell.lblEmail.text = "Email: \(data.useremail ?? "")"
         cell.lblFlield.text = "Branch: \(data.userfield ?? "")"
         return cell
